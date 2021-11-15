@@ -9,7 +9,7 @@ import {Todo} from "src/app/Todo";
 export class AddTodoComponent implements OnInit {
 
   title: string;
-  description: string;
+  desc: string;
   @Output() todoAdd:EventEmitter<Todo> = new EventEmitter();
 
   constructor() { }
@@ -20,7 +20,7 @@ export class AddTodoComponent implements OnInit {
     const todo={
       sno:8,
       title:this.title,
-      description:this.description,
+      desc:this.desc,
       status:true
     }
     this.todoAdd.emit(todo);

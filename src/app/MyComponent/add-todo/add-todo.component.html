@@ -9,7 +9,7 @@
     
     <div class="mb-3">
         <label for="descriptio" >Description</label>
-        <input type="text" [(ngModel)]="description" class="form-control"  id="description">
+        <input type="text" [(ngModel)]="desc" class="form-control" [ngModelOptions]="{standalone: true}" id="desc">
     </div>
 
     <button type="submit" class="btn btn-sm btn-primary">Submit</button>
